@@ -1,0 +1,168 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+    
+/* navbar */
+
+header {
+    --nav-height: 50px;
+    padding-top: var(--nav-height);
+    background-image: url(media/startbaggrund.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 400px;
+}
+    
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: var(--nav-height);
+    display: block;
+    transition: 0.6s;
+}
+.nav a {
+    text-decoration: none;
+    font-family: "Playfair Display", serif;
+    color: white;
+}
+
+/* navbar forsvind */
+.nav--hidden {
+    transform: translateY(calc(-2 * var(--nav-height)));
+    box-shadow: none;
+  }
+
+
+.logo img {
+    margin-top: -1%;
+    width: 5%;
+    margin-left: 47%;
+}
+
+/* body */
+
+body {
+    background-color: black;
+}
+
+/* white space */
+.spacer {
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main p {
+    transition:opacity 1s;
+    
+}
+
+.overskrift {
+    display: flex;
+    justify-content: center;
+    font-family: "inter", serif;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 20%;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.forklaring {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "inter", serif;
+    font-size: 3em;
+    line-height: 1.8;
+    font-weight: bold;
+    margin-top: 20%;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+#astronaut {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    margin-left: 50%;
+    z-index: 100;
+    margin-top: -500px;
+}
+
+.historie1 {
+    display: flex;
+    color: white;
+    height: 1200px;
+    background-image: url(media/halveneptun.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.historie2 {
+    display: flex;
+    color: white;
+    height: 1200px;
+    background-image: url(media/Uranus.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+.box {
+    display: flex;
+    width: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+.box img {
+    height: 300px;
+}
+
+.infobox {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+.infobox h1 {
+    font-family: "inter", serif;
+    color: white;
+    text-align: center;
+}
+
+.infobox p {
+    color: white;
+    font-size: large;
+    line-height: 1.2;
+}
+
+/* footer - rumskib. En måde at vende tilbage til jorden */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-image: url(media/dock.png);
+    background-size: contain;
+}
+
+.skærm {
+    height: 450px;
+}
